@@ -9,7 +9,7 @@ export async function generateMetadata({ params: { id } }: Props): Promise<Metad
   const post = await getData(id);
   return {
     title: post.title,
-    // description: post.body,
+    description: post.body,
   };
 }
 
